@@ -75,7 +75,7 @@ padding: 7px;
 
 
 
-@media (min-width: 1024px) {
+@media (min-width: 1125px) {
     .simple-emo-grid {
         margin-left: 20%;
         margin-right: 20%;
@@ -94,6 +94,12 @@ padding: 7px;
     .text-emo-selection{
         margin-left: 10%; 
         margin-right: 10%;
+    }
+
+
+    .complex-emo-enhance{
+        margin-left: 15%;
+        margin-right: 15%;
     }
 }
 .simple-emo-grid {
@@ -139,6 +145,8 @@ padding: 7px;
     padding: 10px;
     margin: 5px;
 } */
+
+
 
 .col-title {
     text-align: center;

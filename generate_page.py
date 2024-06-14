@@ -118,7 +118,7 @@ emotions_cap = ['Empathy', 'Charisma']
 for emotion_cap in emotions_cap:
 
     emotion = emotion_cap.lower()
-    table = '''<div class="simple-emo-grid grid grid-rows-5 lg:grid-rows-5 gap-5" style="grid-template-columns: auto repeat(7, 1fr);">'''
+    table = '''<div class="complex-emo-enhance grid grid-rows-5 lg:grid-rows-5 gap-5" style="grid-template-columns: auto repeat(7, 1fr);">'''
     # Add column titles
     strengths = [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6]
     col_titles = ['Original <br> Clone'] + [f'{emotion_cap} <br> ({strength:.1f})' for strength in strengths[1:]]

@@ -147,6 +147,11 @@ padding: 7px;
 } */
 
 
+.source-audio-play{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .col-title {
     text-align: center;

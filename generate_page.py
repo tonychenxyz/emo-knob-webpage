@@ -32,6 +32,15 @@ neutral_file_selection = {
 
 
 html += '<h1 class="page-title">Audio Samples for EmoKnob</h1>'
+
+html += '<h1 class="section-title">Source Audio</h1>'
+html += '<p class="section-desc" style="text-align:center">All of voice clone and voice clone enhaned with emotion control on this page are obtained from cloning this clip.</p>'
+
+html += '<div class="source-audio-play"><span class="cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-5 h-5"><path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clip-rule="evenodd"></path></svg></span>'
+html += '</div>'
+html += f'<audio src="audios/bria.mp3"></audio>'
+html += '</div>'
+
 html += '<h1 class="section-title">Emotion Enhancement (Simple Emotions)</h1>'
 
 html += '<p class="section-desc">This section shows examples of enhancing an <b> emotional text </b> with fine-grained emotion control of the corresponding emotion on simple emotions. Number in parentheses is the <b> strength </b> of the emotion control. All emotion direction vectors are obtained with <b> single-shot </b> (one pair of emotional and neutral clip). </p>'

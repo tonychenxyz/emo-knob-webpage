@@ -245,10 +245,36 @@ for row_idx, row_title in enumerate(row_titles):
 table += '</div>'
 html += table
 
+html += '<h1 class="section-title">Application: Make a Non-Empathetic Speaker Empathetic</h1>'
+html += '<p class="section-desc" >In this section, we show how we can use EmoKnob to make a non-empathetic speaker empathetic. Emotion direction is obtained with single-shot (one pair of empathetic and neutral clip).</p>'
+
+# Define the titles for the columns
+speaker_types = ['Original Speaker (Contains Vulgar Language)', 'Original Clone', 'Empathetic 1', 'Empathetic 2']
+audio_paths = ['audios/rick/combined_rick.m4a', 'audios/rick/another_pure_rick_morty.wav', 'audios/rick/rick_0.4.wav', 'audios/rick/rick_0.5_morty.wav']
+# Create the grid container
+html += '<div class="complex-emo-selection grid grid-rows-2 gap-5" style="grid-template-columns: repeat(4, 1fr);">'
+
+# Add column titles
+for speaker in speaker_types:
+    html += f'<div class="col-title p-2 rounded-lg bg-[#CFDFFF] font-bold text-center">{speaker}</div>'
+
+# Add audio cells for each speaker type
+for speaker_idx, speaker in enumerate(speaker_types):
+    html += f'<div class="cell p-2 rounded-lg flex flex-col space-y-2 bg-[#CFDFFF] items-center h-full">'
+    html += '<div class="flex space-x-2 items-center justify-center">'
+    html += '<span class="cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-5 h-5"><path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clip-rule="evenodd"></path></svg></span>'
+    html += '</div>'
+    html += f'<audio src="{audio_paths[speaker_idx]}"></audio>'
+    html += '</div>'
+
+html += '</div>'
 
 html += '</body></html>'
 with open('index.html', 'w') as f:
     f.write(html)
+
+
+
 
 
 

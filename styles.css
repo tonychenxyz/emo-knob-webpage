@@ -202,3 +202,10 @@ padding: 7px;
     margin-top: 3%;
     text-align: center;
 }
+
+.emo-knob-title{
+    margin-left: 20px;
+    background-color: #E0FEE4;
+    padding: 15px;
+    border-radius: 10px;
+}

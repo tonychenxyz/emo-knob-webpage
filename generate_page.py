@@ -31,7 +31,7 @@ neutral_file_selection = {
 }
 
 
-html += '<h1 class="page-title">Audio Samples for EmoKnob</h1>'
+html += '<h1 class="page-title">Audio Samples for <span class="emo-knob-title">🎛️ EmoKnob</span></h1>'
 
 html += '<h1 class="section-title">Source Audio</h1>'
 html += '<p class="section-desc" style="text-align:center">All of voice clone and voice clone enhaned with emotion control on this page are obtained from cloning this clip.</p>'
